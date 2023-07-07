@@ -1,13 +1,24 @@
 <resources>
     <string name="app_name">Auth2</string>
     <string name="title_activity_sign_in">SignInActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="welcome_user">Welcome World!</string>
+
+    <string name="txt_flights">Flights</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_popular_categories">Popular Categories</string>
+    <string name="txt_city_nairobi">Nairobi, NRB</string>
+    <string name="txt_recommended">Recommended</string>
+    <string name="txt_see_all">See all</string>
+    <string name="txt_china">China</string>
+
+        <string name="txt_hotels">Hotels</string>
+        <string name="txt_visa">Visa</string>
+        <string name="txt_buses">Buses</string>
+        <string name="txt_restaurant">Restaurant</string>
+        <string name="txt_label_1">Item 1</string>
+        <string name="txt_label_2">Item 2</string>
+        <string name="txt_label_3">Item 3</string>
+        <string name="txt_label_4">Item 4</string>
+        <string name="txt_france">France</string>
+        <string name="txt_india">India</string>
+
 </resources>

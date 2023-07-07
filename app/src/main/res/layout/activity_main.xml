@@ -1,18 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color2"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/welcome_user"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingClass">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/baseline_menu_24"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_location_on_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/nunitoblack"
+                        android:text="@string/txt_city_nairobi"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/background_rounded"
+                    android:src="@drawable/doggy"
+                    android:padding="8dp"
+                    android:layout_margin="6dp"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:hint="@string/txt_search"
+                android:textColorHint="@color/white"
+                app:hintTextColor="@color/white"
+                app:startIconTint="@color/white"
+                app:boxStrokeColor="@color/color2"
+                app:startIconDrawable="@drawable/baseline_search_24"
+                app:boxBackgroundColor="@color/color2"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/nunitobold"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_popular_categories"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/nunitoblack"
+                android:layout_marginTop="64dp"
+                android:layout_marginStart="6dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp">
+                <LinearLayout
+                    android:id="@+id/LayoutCategories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_recommended"
+                    android:textSize="22sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/nunitoblack"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="6dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_see_all"
+                    android:textSize="22sp"
+                    android:textColor="@color/color3"
+                    android:fontFamily="@font/nunitoblack"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp">
+                <LinearLayout
+                    android:id="@+id/layoutRecommended"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+<!--    <com.ismaeldivita.chipnavigation.ChipNavigationBar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:background="@drawable/background_rounded"-->
+<!--        android:padding="6dp"-->
+<!--        android:layout_margin="6dp"-->
+<!--        app:cnb_menuResource="@menu/bottom_menu"-->
+<!--        tools:ignore="MissingClass" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
