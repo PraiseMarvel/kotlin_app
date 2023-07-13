@@ -23,21 +23,27 @@ class MainActivity : AppCompatActivity() {
             R.drawable.passport,
             R.drawable.bus,
             R.drawable.restaurant,
-            R.drawable.plane,
-            R.drawable.hotel,
+
         )
 
         val nameList = arrayOf<String>(
-            "Flights","Hotels","Visa","Buses","Restaurants","Flights","Hotels"
+            "Flights","Hotels","Visa","Buses","Restaurants"
         )
 
         val imagesRecommended = arrayOf<Int>(
             R.drawable.chinaimage,
-            R.drawable.chinaimage,
-            R.drawable.chinaimage,
+            R.drawable.switzerland,
+            R.drawable.sychelles,
+            R.drawable.germany,
+            R.drawable.brazil,
+            R.drawable.newfrance,
+            R.drawable.dubai,
+            R.drawable.mombasa,
+            R.drawable.zanzibar,
+            R.drawable.japan,
         )
 
-        val countryRecommended = arrayOf<String>("China","France","India")
+        val countryRecommended = arrayOf<String>("China","Switzerland","Sychelles","Germany","Brazil","France","Dubai","Mombasa","Zanzibar","Japan")
 
         for (i in imageList.indices){
             val view = layoutInflater.inflate(R.layout.item_categories,itemLayout, false)

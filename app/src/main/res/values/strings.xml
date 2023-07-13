@@ -10,15 +10,15 @@
     <string name="txt_see_all">See all</string>
     <string name="txt_china">China</string>
 
-        <string name="txt_hotels">Hotels</string>
-        <string name="txt_visa">Visa</string>
-        <string name="txt_buses">Buses</string>
-        <string name="txt_restaurant">Restaurant</string>
-        <string name="txt_label_1">Item 1</string>
-        <string name="txt_label_2">Item 2</string>
-        <string name="txt_label_3">Item 3</string>
-        <string name="txt_label_4">Item 4</string>
-        <string name="txt_france">France</string>
-        <string name="txt_india">India</string>
+    <string name="txt_hotels">Hotels</string>
+    <string name="txt_visa">Visa</string>
+    <string name="txt_buses">Buses</string>
+    <string name="txt_restaurant">Restaurant</string>
+    <string name="txt_label_1">Item 1</string>
+    <string name="txt_label_2">Item 2</string>
+    <string name="txt_label_3">Item 3</string>
+    <string name="txt_label_4">Item 4</string>
+    <string name="txt_france">France</string>
+    <string name="txt_india">India</string>
 
 </resources>
