@@ -22,5 +22,14 @@
     <string name="txt_label_4">Item 4</string>
     <string name="txt_france">France</string>
     <string name="txt_india">India</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="tag">Tag</string>
+    <string name="notification">Notification</string>
+    <string name="setting">Setting</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="rate_us">Rate us</string>
 
 </resources>
