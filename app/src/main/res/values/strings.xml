@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Auth2</string>
     <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 
     <string name="txt_flights">Flights</string>
     <string name="txt_search">Search</string>
